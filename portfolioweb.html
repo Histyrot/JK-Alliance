@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Réalisations Web | JK-Alliance</title>
+    <meta name="description" content="Découvrez le portfolio des sites internet créés par JK-Alliance pour les auto-entrepreneurs. Des sites vitrines sur-mesure, performants et optimisés SEO.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.jk-alliance.com/portfolioweb.html">
+    <meta property="og:title" content="Nos Réalisations Web & Création de Sites | JK-Alliance">
+    <meta property="og:description" content="Découvrez nos créations de sites internet vitrines sur-mesure pour les professionnels. Design responsive, optimisation SEO et budget maîtrisé.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.jk-alliance.com/portfolioweb.html">
+    <meta property="og:image" content="assets/Logo JK-Alliance (Qualité opti).png">
+    <meta property="og:locale" content="fr_FR">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        jkGreen: '#4ade80',
+                        jkDarkGreen: '#166534',
+                        jkBlue: '#3b82f6',
+                        jkDarkBlue: '#1e3a8a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        .glass-effect { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-gray-50">
+
+    <nav class="fixed w-full z-50 glass-effect border-b border-gray-200 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html">
+                        <img src="assets/Logo JK-Alliance (Qualité opti).png" alt="Logo JK-Alliance" class="h-16 w-auto object-contain transition-all duration-300" onerror="this.src='https://placehold.co/200x80/ffffff/166534?text=JK-Alliance'">
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
+                    <a href="index.html#accueil" class="text-gray-600 hover:text-jkDarkGreen font-medium transition">Accueil</a>
+                    <a href="index.html#notre-duo" class="text-gray-600 hover:text-jkDarkGreen font-medium transition">Notre Duo</a>
+                    <a href="index.html#services-particuliers" class="text-gray-600 hover:text-jkDarkGreen font-medium transition">Particuliers</a>
+                    <a href="index.html#services-pros" class="text-gray-600 hover:text-jkDarkBlue font-medium transition">Professionnels</a>
+                    
+                    <div class="relative group">
+                        <button class="bg-jkDarkGreen text-white px-5 py-2 rounded-full hover:bg-opacity-90 transition shadow-md flex items-center font-medium">
+                            En savoir plus <i data-lucide="chevron-down" class="w-4 h-4 ml-1 group-hover:rotate-180 transition-transform duration-300"></i>
+                        </button>
+                        <div class="absolute left-1/2 -translate-x-1/2 mt-0 pt-4 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                            <div class="bg-white border border-gray-100 rounded-xl shadow-xl flex flex-col overflow-hidden">
+                                <a href="cesu.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-jkDarkGreen transition border-b border-gray-50 flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i data-lucide="piggy-bank" class="w-4 h-4 text-jkDarkGreen"></i>
+                                    </div>
+                                    Le fonctionnement CESU
+                                </a>
+                                <a href="portfoliocesu.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-jkDarkGreen transition border-b border-gray-50 flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i data-lucide="sparkles" class="w-4 h-4 text-jkDarkGreen"></i>
+                                    </div>
+                                    Nos Interventions
+                                </a>
+                                <a href="professionnel.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-jkDarkBlue transition border-b border-gray-50 flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i data-lucide="rocket" class="w-4 h-4 text-jkDarkBlue"></i>
+                                    </div>
+                                    Accompagnement Pro
+                                </a>
+                                <a href="#" class="px-4 py-3 text-sm font-bold text-jkDarkBlue bg-blue-50 transition flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-blue-200 flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i data-lucide="monitor-smartphone" class="w-4 h-4 text-jkDarkBlue"></i>
+                                    </div>
+                                    Nos Réalisations Web
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="index.html#contact" class="bg-jkDarkBlue text-white px-5 py-2 rounded-full hover:bg-opacity-90 transition shadow-md">Nous contacter</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t overflow-y-auto max-h-[calc(100vh-80px)]">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html#accueil" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Accueil</a>
+                <a href="index.html#notre-duo" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Notre Duo</a>
+                <a href="index.html#services-particuliers" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Particuliers</a>
+                <a href="index.html#services-pros" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Professionnels</a>
+                
+                <div class="border-t border-gray-100 my-2 pt-2 pb-1">
+                    <p class="px-3 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">En savoir plus</p>
+                    <a href="cesu.html" class="flex items-center px-3 py-2 text-gray-700 hover:bg-green-50 hover:text-jkDarkGreen rounded-md transition">
+                        <i data-lucide="piggy-bank" class="w-4 h-4 mr-3 text-jkDarkGreen"></i> Le fonctionnement CESU
+                    </a>
+                    <a href="portfoliocesu.html" class="flex items-center px-3 py-2 text-gray-700 hover:bg-green-50 hover:text-jkDarkGreen rounded-md transition">
+                        <i data-lucide="sparkles" class="w-4 h-4 mr-3 text-jkDarkGreen"></i> Nos Interventions
+                    </a>
+                    <a href="professionnel.html" class="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-jkDarkBlue rounded-md transition">
+                        <i data-lucide="rocket" class="w-4 h-4 mr-3 text-jkDarkBlue"></i> Accompagnement Pro
+                    </a>
+                    <a href="#" class="flex items-center px-3 py-2 font-bold text-jkDarkBlue bg-blue-50 rounded-md transition">
+                        <i data-lucide="monitor-smartphone" class="w-4 h-4 mr-3 text-jkDarkBlue"></i> Nos Réalisations Web
+                    </a>
+                </div>
+
+                <a href="index.html#contact" class="block px-3 py-2 text-jkDarkBlue font-bold hover:bg-gray-50 rounded-md mt-2">Nous contacter</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-16 lg:pt-40 lg:pb-20 bg-gray-900 text-white overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="fade-in">
+                <div class="inline-flex items-center text-jkBlue font-bold tracking-wider uppercase text-sm mb-4">
+                    <i data-lucide="layout" class="w-4 h-4 mr-2"></i> Portfolio Web
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                    Nos <span class="text-transparent bg-clip-text bg-gradient-to-r from-jkBlue to-blue-400">Réalisations</span>
+                </h1>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                    Voici les sites vitrines réalisés par nos soins. Des plateformes simples et efficaces, conçues pour vous offrir une belle visibilité tout en optimisant au maximum vos dépenses.
+                </p>
+            </div>
+        </div>
+        <div class="absolute inset-0 z-0 opacity-10" style="background-image: radial-gradient(#3b82f6 1px, transparent 1px); background-size: 30px 30px;"></div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 fade-in group">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    
+                    <div class="relative aspect-video lg:aspect-auto bg-gray-50 border-r border-gray-100 flex items-center justify-center p-6 lg:p-8 overflow-hidden">
+                        <img src="assets/maisonrocher.png" alt="Logo Maison Rocher" class="w-full h-full max-h-72 object-contain transition-transform duration-700 group-hover:scale-110 drop-shadow-sm" onerror="this.src='https://placehold.co/400x200/ffffff/1e3a8a?text=Maison+Rocher'">
+                        <div class="absolute inset-0 bg-jkDarkBlue bg-opacity-5 group-hover:bg-opacity-0 transition-all duration-300 pointer-events-none"></div>
+                        <div class="absolute top-6 left-6 bg-white text-jkDarkBlue text-xs font-bold px-3 py-1.5 rounded-full shadow-md flex items-center z-10">
+                            <span class="w-2 h-2 rounded-full bg-jkGreen mr-2 animate-pulse"></span> En ligne
+                        </div>
+                    </div>
+                    
+                    <div class="p-8 lg:p-12 flex flex-col justify-center">
+                        <div class="mb-4">
+                            <span class="text-sm font-bold text-gray-400 uppercase tracking-widest">Site Vitrine</span>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Maison Rocher</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Création d'une identité visuelle numérique et d'un site vitrine sur-mesure pour Maison Rocher. L'objectif était de concevoir une plateforme élégante et intuitive, reflétant la qualité de leurs services tout en assurant une navigation fluide sur ordinateur comme sur mobile.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 text-jkDarkBlue text-sm font-medium border border-blue-100">
+                                <i data-lucide="smartphone" class="w-3 h-3 mr-1.5"></i> Adapté tous écrans
+                            </span>
+                            <span class="inline-flex items-center px-3 py-1 rounded-full bg-green-50 text-jkDarkGreen text-sm font-medium border border-green-100">
+                                <i data-lucide="search" class="w-3 h-3 mr-1.5"></i> SEO Local
+                            </span>
+                            <span class="inline-flex items-center px-3 py-1 rounded-full bg-yellow-50 text-yellow-700 text-sm font-medium border border-yellow-200">
+                                <i data-lucide="piggy-bank" class="w-3 h-3 mr-1.5"></i> Budget ultra-maîtrisé
+                            </span>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="https://maisonrocher.jk-alliance.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-jkDarkBlue to-jkBlue text-white font-bold rounded-xl hover:shadow-lg transition-all transform hover:-translate-y-1">
+                                Visiter le site <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 bg-blue-50 border-2 border-dashed border-blue-200 rounded-3xl p-12 text-center fade-in">
+                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
+                    <i data-lucide="plus" class="w-8 h-8 text-jkBlue"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Votre entreprise ici ?</h3>
+                <p class="text-gray-600 max-w-xl mx-auto mb-6">
+                    Vous souhaitez donner une nouvelle dimension à votre activité avec un site internet professionnel et à votre image ?
+                </p>
+                <a href="index.html#contact" class="inline-flex items-center px-6 py-3 bg-white text-jkDarkBlue font-bold rounded-full hover:bg-gray-50 transition shadow-sm border border-gray-100">
+                    Discutons de votre projet
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-jkGreen to-jkBlue font-bold text-xl mr-2">JK-Alliance</span>
+                <span class="text-sm">© 2026 Tous droits réservés.</span>
+            </div>
+            <div class="flex space-x-6 text-sm">
+                <a href="#" class="hover:text-white transition">Mentions légales</a>
+                <a href="#" class="hover:text-white transition">Politique de confidentialité</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('shadow-md');
+                navbar.classList.replace('bg-transparent', 'glass-effect');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeElements.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

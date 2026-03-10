@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK-Alliance | Accompagnement & Services aux Professionnels et Particuliers</title>
+    
+    <meta name="description" content="JK-Alliance accompagne les particuliers (aide à domicile, CESU) et les auto-entrepreneurs (création de site web, gestion) près de Fresnay-l'Évêque.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.jk-alliance.com/">
+    
+    <meta property="og:title" content="JK-Alliance | Services aux Particuliers & Pros">
+    <meta property="og:description" content="Un duo à votre service : aide à la personne, entretien, création de sites internet et assistance administrative.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.jk-alliance.com/">
+    <meta property="og:image" content="assets/Logo JK-Alliance (Qualité opti).png">
+    <meta property="og:locale" content="fr_FR">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        jkGreen: '#4ade80',
+                        jkDarkGreen: '#166534',
+                        jkBlue: '#3b82f6',
+                        jkDarkBlue: '#1e3a8a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        .glass-effect { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-gray-50">
+
+    <nav class="fixed w-full z-50 glass-effect border-b border-gray-200 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="#accueil">
+                        <img src="assets/Logo JK-Alliance (Qualité opti).png" alt="Logo JK-Alliance" class="h-16 w-auto object-contain transition-all duration-300" onerror="this.src='https://placehold.co/200x80/ffffff/166534?text=JK-Alliance'">
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
+                    <a href="#accueil" class="text-gray-600 hover:text-jkDarkGreen font-medium transition">Accueil</a>
+                    <a href="#notre-duo" class="text-gray-600 hover:text-jkDarkGreen font-medium transition">Notre Duo</a>
+                    <a href="#services-particuliers" class="text-gray-600 hover:text-jkDarkGreen font-medium transition">Particuliers</a>
+                    <a href="#services-pros" class="text-gray-600 hover:text-jkDarkBlue font-medium transition">Professionnels</a>
+                    
+                    <div class="relative group">
+                        <button class="bg-jkDarkGreen text-white px-5 py-2 rounded-full hover:bg-opacity-90 transition shadow-md flex items-center font-medium">
+                            En savoir plus <i data-lucide="chevron-down" class="w-4 h-4 ml-1 group-hover:rotate-180 transition-transform duration-300"></i>
+                        </button>
+                        <div class="absolute left-1/2 -translate-x-1/2 mt-0 pt-4 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                            <div class="bg-white border border-gray-100 rounded-xl shadow-xl flex flex-col overflow-hidden">
+                                <a href="cesu.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-jkDarkGreen transition border-b border-gray-50 flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i data-lucide="piggy-bank" class="w-4 h-4 text-jkDarkGreen"></i>
+                                    </div>
+                                    Le fonctionnement CESU
+                                </a>
+                                <a href="portfoliocesu.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-jkDarkGreen transition border-b border-gray-50 flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i data-lucide="sparkles" class="w-4 h-4 text-jkDarkGreen"></i>
+                                    </div>
+                                    Nos Interventions
+                                </a>
+                                <a href="professionnel.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-jkDarkBlue transition border-b border-gray-50 flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i data-lucide="rocket" class="w-4 h-4 text-jkDarkBlue"></i>
+                                    </div>
+                                    Accompagnement Pro
+                                </a>
+                                <a href="portfolioweb.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-jkDarkBlue transition flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i data-lucide="monitor-smartphone" class="w-4 h-4 text-jkDarkBlue"></i>
+                                    </div>
+                                    Nos Réalisations Web
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="bg-jkDarkBlue text-white px-5 py-2 rounded-full hover:bg-opacity-90 transition shadow-md">Nous contacter</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t overflow-y-auto max-h-[calc(100vh-80px)]">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#accueil" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Accueil</a>
+                <a href="#notre-duo" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Notre Duo</a>
+                <a href="#services-particuliers" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Particuliers</a>
+                <a href="#services-pros" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Professionnels</a>
+                
+                <div class="border-t border-gray-100 my-2 pt-2 pb-1">
+                    <p class="px-3 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">En savoir plus</p>
+                    <a href="cesu.html" class="flex items-center px-3 py-2 text-gray-700 hover:bg-green-50 hover:text-jkDarkGreen rounded-md transition">
+                        <i data-lucide="piggy-bank" class="w-4 h-4 mr-3 text-jkDarkGreen"></i> Le fonctionnement CESU
+                    </a>
+                    <a href="portfoliocesu.html" class="flex items-center px-3 py-2 text-gray-700 hover:bg-green-50 hover:text-jkDarkGreen rounded-md transition">
+                        <i data-lucide="sparkles" class="w-4 h-4 mr-3 text-jkDarkGreen"></i> Nos Interventions
+                    </a>
+                    <a href="professionnel.html" class="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-jkDarkBlue rounded-md transition">
+                        <i data-lucide="rocket" class="w-4 h-4 mr-3 text-jkDarkBlue"></i> Accompagnement Pro
+                    </a>
+                    <a href="portfolioweb.html" class="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-jkDarkBlue rounded-md transition">
+                        <i data-lucide="monitor-smartphone" class="w-4 h-4 mr-3 text-jkDarkBlue"></i> Nos Réalisations Web
+                    </a>
+                </div>
+
+                <a href="#contact" class="block px-3 py-2 text-jkDarkBlue font-bold hover:bg-gray-50 rounded-md mt-2">Nous contacter</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="accueil" class="pt-32 pb-20 lg:pt-48 lg:pb-32 bg-gradient-to-br from-green-50 to-blue-50 overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="max-w-3xl mx-auto fade-in relative">
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md md:max-w-lg z-0 opacity-20 pointer-events-none">
+                    <img src="assets/Logo JK-Alliance (sans texte HD).png" alt="" class="w-full h-auto object-contain">
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6 relative z-10">
+                    L'humain au cœur de votre <span class="text-transparent bg-clip-text bg-gradient-to-r from-jkDarkGreen to-jkDarkBlue">quotidien</span>
+                </h1>
+                <p class="text-xl text-black font-bold mb-10 leading-relaxed relative z-10">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-jkDarkGreen to-jkDarkBlue">JK-Alliance</span>, c'est un duo complémentaire à votre service. De l'aide à la personne à l'accompagnement des auto-entrepreneurs, nous facilitons votre vie avec bienveillance.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
+                    <a href="#services-particuliers" class="px-8 py-3 bg-jkDarkGreen text-white rounded-full font-medium hover:bg-green-800 transition shadow-lg flex items-center justify-center">
+                        <i data-lucide="user" class="w-5 h-5 mr-2"></i> Je suis un particulier
+                    </a>
+                    <a href="#services-pros" class="px-8 py-3 bg-jkDarkBlue text-white rounded-full font-medium hover:bg-blue-900 transition shadow-lg flex items-center justify-center">
+                        <i data-lucide="briefcase" class="w-5 h-5 mr-2"></i> Je suis un professionnel
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="notre-duo" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="fade-in">
+                <i data-lucide="heart-handshake" class="w-12 h-12 mx-auto text-jkGreen mb-6"></i>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+                    Notre philosophie, notre histoire
+                </h2>
+                <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+                    Anciens conseillers funéraires, nous avons accompagné de nombreuses familles dans les moments les plus délicats. De cette expérience forte, nous avons conservé une conviction profonde : <strong>notre vocation est d'aider, d'écouter et de conseiller.</strong>
+                </p>
+                <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+                    Aujourd'hui, avec <span class="text-transparent bg-clip-text bg-gradient-to-r from-jkDarkGreen to-jkDarkBlue font-bold">JK-Alliance</span>, nous avons choisi de placer cette passion de l'accompagnement au cœur de votre quotidien. Nous formons un duo complémentaire, soudé dans la vie comme dans le travail.
+                </p>
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    Que vous soyez une personne âgée ayant besoin d'un coup de main, une famille débordée, ou un auto-entrepreneur cherchant à structurer son activité, nous sommes là pour vous. <strong>Le social, l'aide et le conseil sont notre ADN.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services-particuliers" class="py-20 bg-green-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <span class="text-jkDarkGreen font-semibold tracking-wider uppercase text-sm">Éligible au CESU</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">Services aux Particuliers</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Nous vous accompagnons dans les tâches du quotidien et des petites contraintes de la vie, afin que vous puissiez vous concentrer sur l'essentiel.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border border-green-100 fade-in">
+                    <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="home" class="w-7 h-7 text-jkDarkGreen"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Aide au domicile</h3>
+                    <p class="text-gray-600 mb-4">Entretien du cadre de vie, ménage, repassage. Nous prenons soin de votre intérieur pour votre confort.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border border-green-100 fade-in">
+                    <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="file-text" class="w-7 h-7 text-jkDarkGreen"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Assistance Administrative</h3>
+                    <p class="text-gray-600 mb-4">Tri du courrier, aide à la rédaction de courriers, démarches en ligne, constitution de dossiers.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border border-green-100 fade-in">
+                    <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="shopping-bag" class="w-7 h-7 text-jkDarkGreen"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Courses & Accompagnement</h3>
+                    <p class="text-gray-600 mb-4">Préparation des repas, livraison de courses, accompagnement aux rendez-vous médicaux ou sorties.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border border-green-100 fade-in">
+                    <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="wrench" class="w-7 h-7 text-jkDarkGreen"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Petit Bricolage & Jardinage</h3>
+                    <p class="text-gray-600 mb-4">Changement d'ampoule, montage de petits meubles, tonte de pelouse, entretien léger du jardin.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border border-green-100 fade-in">
+                    <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="monitor-smartphone" class="w-7 h-7 text-jkDarkGreen"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Initiation Informatique</h3>
+                    <p class="text-gray-600 mb-4">Aide à l'utilisation du smartphone, tablette ou ordinateur. Apprendre à envoyer un email ou faire un appel vidéo.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border border-green-100 fade-in">
+                    <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="coffee" class="w-7 h-7 text-jkDarkGreen"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Compagnie & Écoute</h3>
+                    <p class="text-gray-600 mb-4">Promenades, lecture, jeux de société ou simplement une présence bienveillante pour rompre l'isolement.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center fade-in">
+                <div class="flex flex-col items-center justify-center gap-6">
+                    <div class="inline-flex items-center bg-green-100 text-jkDarkGreen px-6 py-3 rounded-full font-medium">
+                        <i data-lucide="info" class="w-5 h-5 mr-2"></i>
+                        Avantage Fiscal : Bénéficiez de 50% de crédit d'impôt grâce au CESU.
+                    </div>
+                    <a href="cesu.html" class="inline-flex items-center px-8 py-4 bg-jkDarkGreen text-white rounded-full font-bold text-lg hover:bg-green-800 transition-all shadow-lg transform hover:-translate-y-1">
+                        Découvrir le fonctionnement du CESU <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services-pros" class="py-20 bg-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <span class="text-jkDarkBlue font-semibold tracking-wider uppercase text-sm">Gestion & Numérique</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">Accompagnement Auto-Entrepreneurs</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Vous avez le savoir-faire, nous vous aidons à structurer le reste. Lancez-vous sereinement, nous gérons la technique et l'organisation.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border border-blue-100 flex flex-col sm:flex-row gap-6 fade-in">
+                    <div class="flex-shrink-0 w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                        <i data-lucide="globe" class="w-8 h-8 text-jkDarkBlue"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Création de site internet</h3>
+                        <p class="text-gray-600 mb-3">Conception de sites vitrines dynamiques et épurés (comme celui-ci) pour donner de la visibilité à votre activité sur le web.</p>
+                        <ul class="space-y-1 text-sm text-gray-500">
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-jkDarkBlue"></i> Hébergement optimisé</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-jkDarkBlue"></i> Design sur-mesure</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border border-blue-100 flex flex-col sm:flex-row gap-6 fade-in">
+                    <div class="flex-shrink-0 w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                        <i data-lucide="calculator" class="w-8 h-8 text-jkDarkBlue"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Assistance Administrative & Gestion</h3>
+                        <p class="text-gray-600 mb-3">Aide à l'organisation de vos documents, suivi de trésorerie, déclaration URSSAF, devis et facturation.</p>
+                        <ul class="space-y-1 text-sm text-gray-500">
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-jkDarkBlue"></i> Gain de temps</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-jkDarkBlue"></i> Sérénité administrative</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border border-blue-100 flex flex-col sm:flex-row gap-6 fade-in">
+                    <div class="flex-shrink-0 w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                        <i data-lucide="cpu" class="w-8 h-8 text-jkDarkBlue"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Installation & Paramétrage Logiciels</h3>
+                        <p class="text-gray-600 mb-3">Recherche, installation et mise en place des meilleurs outils numériques pour faciliter votre quotidien (ERP, CRM, agendas...).</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border border-blue-100 flex flex-col sm:flex-row gap-6 fade-in">
+                    <div class="flex-shrink-0 w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                        <i data-lucide="headphones" class="w-8 h-8 text-jkDarkBlue"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Maintenance & Support continu</h3>
+                        <p class="text-gray-600 mb-3">On ne vous laisse pas seul avec vos outils. Nous assurons la maintenance, les mises à jour et la gestion de vos solutions informatiques.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center fade-in">
+                <a href="professionnel.html" class="inline-flex items-center px-8 py-4 bg-jkDarkBlue text-white rounded-full font-bold text-lg hover:bg-blue-900 transition-all shadow-lg transform hover:-translate-y-1">
+                    Découvrir notre accompagnement Pro en détail <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl overflow-hidden shadow-2xl fade-in">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="p-10 lg:p-16 text-white">
+                        <h2 class="text-3xl font-bold mb-4">Discutons de vos besoins</h2>
+                        <p class="text-gray-300 mb-8">
+                            Chaque personne, chaque entreprise est unique. Contactez-nous pour un échange gratuit et sans engagement afin de définir comment nous pouvons vous aider.
+                        </p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i data-lucide="phone" class="w-5 h-5 text-jkGreen"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-400">Appelez-nous</p>
+                                    <p class="text-lg font-medium">06 XX XX XX XX</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i data-lucide="mail" class="w-5 h-5 text-jkBlue"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-400">Écrivez-nous</p>
+                                    <p class="text-lg font-medium">contact@jk-alliance.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i data-lucide="map-pin" class="w-5 h-5 text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-400">Notre secteur</p>
+                                    <p class="text-base font-medium leading-tight">Rayon de 30km autour de Fresnay-l'Évêque (28310)</p>
+                                    <p class="text-sm text-gray-400 mt-0.5">Pour les particuliers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-10 lg:p-16">
+                        <form class="space-y-6" onsubmit="event.preventDefault(); alert('Ce formulaire est un exemple, nous le connecterons à votre adresse mail plus tard !');">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Nom & Prénom</label>
+                                <input type="text" id="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-jkDarkBlue focus:ring-jkDarkBlue px-4 py-3 border bg-white" placeholder="Jean Dupont">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email ou Téléphone</label>
+                                <input type="text" id="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-jkDarkBlue focus:ring-jkDarkBlue px-4 py-3 border bg-white" placeholder="jean@exemple.com">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">Votre besoin en quelques mots</label>
+                                <textarea id="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-jkDarkBlue focus:ring-jkDarkBlue px-4 py-3 border bg-white" placeholder="Bonjour, je cherche de l'aide pour..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-gradient-to-r from-jkDarkGreen to-jkDarkBlue text-white font-bold py-3 px-4 rounded-md hover:opacity-90 transition shadow-lg">
+                                Envoyer la demande
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-jkGreen to-jkBlue font-bold text-xl mr-2">JK-Alliance</span>
+                <span class="text-sm">© 2026 Tous droits réservés.</span>
+            </div>
+            <div class="flex space-x-6 text-sm">
+                <a href="#" class="hover:text-white transition">Mentions légales</a>
+                <a href="#" class="hover:text-white transition">Politique de confidentialité</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('shadow-md');
+                navbar.classList.replace('bg-transparent', 'glass-effect');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeElements.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
