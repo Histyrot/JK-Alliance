@@ -4,15 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nos Réalisations Web | JK-Alliance</title>
+    
     <meta name="description" content="Découvrez le portfolio des sites internet créés par JK-Alliance pour les auto-entrepreneurs. Des sites vitrines sur-mesure, performants et optimisés SEO.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.jk-alliance.com/portfolioweb.html">
+
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="JK-Alliance" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
     <meta property="og:title" content="Nos Réalisations Web & Création de Sites | JK-Alliance">
     <meta property="og:description" content="Découvrez nos créations de sites internet vitrines sur-mesure pour les professionnels. Design responsive, optimisation SEO et budget maîtrisé.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.jk-alliance.com/portfolioweb.html">
-    <meta property="og:image" content="assets/Logo JK-Alliance (Qualité opti).png">
+    <meta property="og:image" content="assets/jk.webp">
     <meta property="og:locale" content="fr_FR">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -45,8 +58,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20">
                 <div class="flex items-center">
-                    <a href="index.html">
-                        <img src="assets/Logo JK-Alliance (Qualité opti).png" alt="Logo JK-Alliance" class="h-16 w-auto object-contain transition-all duration-300" onerror="this.src='https://placehold.co/200x80/ffffff/166534?text=JK-Alliance'">
+                    <a href="index.html" aria-label="Retour à l'accueil">
+                        <img src="assets/jk.webp" alt="Logo JK-Alliance" width="200" height="64" fetchpriority="high" class="h-16 w-auto object-contain transition-all duration-300" onerror="this.src='https://placehold.co/200x80/ffffff/166534?text=JK-Alliance'">
                     </a>
                 </div>
                 <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
@@ -56,7 +69,7 @@
                     <a href="index.html#services-pros" class="text-gray-600 hover:text-jkDarkBlue font-medium transition">Professionnels</a>
                     
                     <div class="relative group">
-                        <button class="bg-jkDarkGreen text-white px-5 py-2 rounded-full hover:bg-opacity-90 transition shadow-md flex items-center font-medium">
+                        <button aria-haspopup="true" aria-expanded="false" class="bg-jkDarkGreen text-white px-5 py-2 rounded-full hover:bg-opacity-90 transition shadow-md flex items-center font-medium">
                             En savoir plus <i data-lucide="chevron-down" class="w-4 h-4 ml-1 group-hover:rotate-180 transition-transform duration-300"></i>
                         </button>
                         <div class="absolute left-1/2 -translate-x-1/2 mt-0 pt-4 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
@@ -92,7 +105,7 @@
                     <a href="index.html#contact" class="bg-jkDarkBlue text-white px-5 py-2 rounded-full hover:bg-opacity-90 transition shadow-md">Nous contacter</a>
                 </div>
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                    <button id="mobile-menu-btn" aria-label="Menu principal" aria-expanded="false" class="text-gray-600 hover:text-gray-900 focus:outline-none">
                         <i data-lucide="menu" class="w-6 h-6"></i>
                     </button>
                 </div>
@@ -127,7 +140,7 @@
         </div>
     </nav>
 
-    <section class="pt-32 pb-16 lg:pt-40 lg:pb-20 bg-gray-900 text-white overflow-hidden relative">
+    <header class="pt-32 pb-16 lg:pt-40 lg:pb-20 bg-gray-900 text-white overflow-hidden relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <div class="fade-in">
                 <div class="inline-flex items-center text-jkBlue font-bold tracking-wider uppercase text-sm mb-4">
@@ -142,16 +155,16 @@
             </div>
         </div>
         <div class="absolute inset-0 z-0 opacity-10" style="background-image: radial-gradient(#3b82f6 1px, transparent 1px); background-size: 30px 30px;"></div>
-    </section>
+    </header>
 
-    <section class="py-20 bg-gray-50">
+    <main class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 fade-in group">
+            <article class="bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 fade-in group">
                 <div class="grid grid-cols-1 lg:grid-cols-2">
                     
                     <div class="relative aspect-video lg:aspect-auto bg-gray-50 border-r border-gray-100 flex items-center justify-center p-6 lg:p-8 overflow-hidden">
-                        <img src="assets/maisonrocher.png" alt="Logo Maison Rocher" class="w-full h-full max-h-72 object-contain transition-transform duration-700 group-hover:scale-110 drop-shadow-sm" onerror="this.src='https://placehold.co/400x200/ffffff/1e3a8a?text=Maison+Rocher'">
+                        <img src="assets/maisonrocher.webp" alt="Aperçu du site Maison Rocher" width="600" height="300" class="w-full h-full max-h-72 object-contain transition-transform duration-700 group-hover:scale-110 drop-shadow-sm" onerror="this.src='https://placehold.co/400x200/ffffff/1e3a8a?text=Maison+Rocher'">
                         <div class="absolute inset-0 bg-jkDarkBlue bg-opacity-5 group-hover:bg-opacity-0 transition-all duration-300 pointer-events-none"></div>
                         <div class="absolute top-6 left-6 bg-white text-jkDarkBlue text-xs font-bold px-3 py-1.5 rounded-full shadow-md flex items-center z-10">
                             <span class="w-2 h-2 rounded-full bg-jkGreen mr-2 animate-pulse"></span> En ligne
@@ -186,9 +199,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="mt-16 bg-blue-50 border-2 border-dashed border-blue-200 rounded-3xl p-12 text-center fade-in">
+            <section class="mt-16 bg-blue-50 border-2 border-dashed border-blue-200 rounded-3xl p-12 text-center fade-in">
                 <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
                     <i data-lucide="plus" class="w-8 h-8 text-jkBlue"></i>
                 </div>
@@ -199,10 +212,10 @@
                 <a href="index.html#contact" class="inline-flex items-center px-6 py-3 bg-white text-jkDarkBlue font-bold rounded-full hover:bg-gray-50 transition shadow-sm border border-gray-100">
                     Discutons de votre projet
                 </a>
-            </div>
+            </section>
 
         </div>
-    </section>
+    </main>
 
     <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
@@ -224,7 +237,17 @@
         const menu = document.getElementById('mobile-menu');
 
         btn.addEventListener('click', () => {
+            const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', !isExpanded);
             menu.classList.toggle('hidden');
+        });
+
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                btn.setAttribute('aria-expanded', 'false');
+                menu.classList.add('hidden');
+            });
         });
 
         const navbar = document.getElementById('navbar');
