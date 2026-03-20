@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le fonctionnement CESU | JK-Alliance</title>
+    
+    <meta name="description" content="Découvrez le fonctionnement du CESU et bénéficiez de 50% de crédit d'impôt avec JK-Alliance. Aide à domicile, bricolage, informatique près de Fresnay-l'Évêque.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.jk-alliance.com/cesu.html">
+
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="JK-Alliance" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    
+    <meta property="og:title" content="Le fonctionnement CESU & Avance Immédiate | JK-Alliance">
+    <meta property="og:description" content="Simplifiez-vous la vie et bénéficiez de 50% de crédit d'impôt immédiat sur nos prestations d'aide à domicile avec le dispositif CESU.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.jk-alliance.com/cesu.html">
+    <meta property="og:image" content="assets/jk.webp">
+    <meta property="og:locale" content="fr_FR">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        jkGreen: '#4ade80',
+                        jkDarkGreen: '#166534',
+                        jkBlue: '#3b82f6',
+                        jkDarkBlue: '#1e3a8a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        .glass-effect { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-gray-50">
+
+    <nav class="fixed w-full z-50 glass-effect border-b border-gray-200 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" aria-label="Retour à l'accueil">
+                        <img src="assets/jk.webp" alt="Logo JK-Alliance" width="200" height="64" fetchpriority="high" class="h-16 w-auto object-contain transition-all duration-300" onerror="this.src='https://placehold.co/200x80/ffffff/166534?text=JK-Alliance'">
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
+                    <a href="index.html#accueil" class="text-gray-600 hover:text-jkDarkGreen font-medium transition">Accueil</a>
+                    <a href="index.html#services-particuliers" class="text-gray-600 hover:text-jkDarkGreen font-medium transition">Particuliers</a>
+                    <a href="index.html#services-pros" class="text-gray-600 hover:text-jkDarkBlue font-medium transition">Professionnels</a>
+                    <div class="relative group">
+                        <button aria-haspopup="true" aria-expanded="false" class="bg-jkDarkGreen text-white px-5 py-2 rounded-full hover:bg-opacity-90 transition shadow-md flex items-center font-medium">
+                            En savoir plus <i data-lucide="chevron-down" class="w-4 h-4 ml-1 group-hover:rotate-180 transition-transform duration-300"></i>
+                        </button>
+                        <div class="absolute left-1/2 -translate-x-1/2 mt-0 pt-4 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                            <div class="bg-white border border-gray-100 rounded-xl shadow-xl flex flex-col overflow-hidden">
+                                <a href="#" class="px-4 py-3 text-sm font-bold text-jkDarkGreen bg-green-50 transition border-b border-gray-50 flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-green-200 flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i data-lucide="piggy-bank" class="w-4 h-4 text-jkDarkGreen"></i>
+                                    </div>
+                                    Le fonctionnement CESU
+                                </a>
+                                <a href="portfoliocesu.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-jkDarkGreen transition border-b border-gray-50 flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i data-lucide="sparkles" class="w-4 h-4 text-jkDarkGreen"></i>
+                                    </div>
+                                    Nos Interventions
+                                </a>
+                                <a href="professionnel.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-jkDarkBlue transition border-b border-gray-50 flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i data-lucide="rocket" class="w-4 h-4 text-jkDarkBlue"></i>
+                                    </div>
+                                    Accompagnement Pro
+                                </a>
+                                <a href="portfolioweb.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-jkDarkBlue transition border-b border-gray-50 flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i data-lucide="monitor-smartphone" class="w-4 h-4 text-jkDarkBlue"></i>
+                                    </div>
+                                    Nos Réalisations Web
+                                </a>
+                                <a href="qui-sommes-nous.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i data-lucide="users" class="w-4 h-4 text-gray-700"></i>
+                                    </div>
+                                    Qui sommes-nous ?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="bg-jkDarkBlue text-white px-5 py-2 rounded-full hover:bg-opacity-90 transition shadow-md">Nous contacter</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" aria-label="Menu principal" aria-expanded="false" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t overflow-y-auto max-h-[calc(100vh-80px)]">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html#accueil" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Accueil</a>
+                <a href="index.html#services-particuliers" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Particuliers</a>
+                <a href="index.html#services-pros" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Professionnels</a>
+                <div class="border-t border-gray-100 my-2 pt-2 pb-1">
+                    <p class="px-3 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">En savoir plus</p>
+                    <a href="#" class="flex items-center px-3 py-2 font-bold text-jkDarkGreen bg-green-50 rounded-md transition">
+                        <i data-lucide="piggy-bank" class="w-4 h-4 mr-3 text-jkDarkGreen"></i> Le fonctionnement CESU
+                    </a>
+                    <a href="portfoliocesu.html" class="flex items-center px-3 py-2 text-gray-700 hover:bg-green-50 hover:text-jkDarkGreen rounded-md transition">
+                        <i data-lucide="sparkles" class="w-4 h-4 mr-3 text-jkDarkGreen"></i> Nos Interventions
+                    </a>
+                    <a href="professionnel.html" class="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-jkDarkBlue rounded-md transition">
+                        <i data-lucide="rocket" class="w-4 h-4 mr-3 text-jkDarkBlue"></i> Accompagnement Pro
+                    </a>
+                    <a href="portfolioweb.html" class="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-jkDarkBlue rounded-md transition">
+                        <i data-lucide="monitor-smartphone" class="w-4 h-4 mr-3 text-jkDarkBlue"></i> Nos Réalisations Web
+                    </a>
+                    <a href="qui-sommes-nous.html" class="flex items-center px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md transition">
+                        <i data-lucide="users" class="w-4 h-4 mr-3 text-gray-700"></i> Qui sommes-nous ?
+                    </a>
+                </div>
+                <a href="contact.html" class="block px-3 py-2 text-jkDarkBlue font-bold hover:bg-gray-50 rounded-md mt-2">Nous contacter</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-20 lg:pt-40 lg:pb-24 bg-jkDarkGreen text-white overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="max-w-4xl mx-auto fade-in">
+                <div class="inline-flex items-center bg-white/20 px-4 py-2 rounded-full font-medium text-sm mb-6 backdrop-blur-sm border border-white/30">
+                    <i data-lucide="check-circle" class="w-4 h-4 mr-2"></i> Un dispositif officiel de l'État
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                    Comprendre vos <span class="text-jkGreen">50% d'économies</span>
+                </h1>
+                <p class="text-xl text-green-50 mb-10 leading-relaxed max-w-2xl mx-auto">
+                    Le Crédit d'Impôt Service à la Personne permet de diviser par deux le coût de vos prestations. Voici une simulation pour comprendre le calcul.
+                </p>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+            <svg class="relative block w-full h-[50px] md:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,130.9,127.3,196.4,115.87,239.5,108.36,280.45,82.8,321.39,56.44Z" class="fill-gray-50"></path>
+            </svg>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Deux modes d'intervention pour s'adapter à vos besoins</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                        Chez <span class="text-transparent bg-clip-text bg-gradient-to-r from-jkDarkGreen to-jkDarkBlue font-bold">JK-Alliance</span>, nous privilégions la clarté. Voici des exemples de calculs (donnés à titre indicatif) pour illustrer le principe des 50% de crédit d'impôt.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                    <div class="bg-white p-8 rounded-3xl shadow-lg border-t-4 border-jkGreen fade-in relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-green-50 text-jkDarkGreen px-4 py-1 rounded-bl-2xl font-bold text-sm">Ménage, Aide, Compagnie</div>
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="user-check" class="w-6 h-6 text-jkDarkGreen"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Emploi direct (CESU)</h3>
+                        </div>
+                        <p class="text-gray-600 mb-6 min-h-[48px]">Vous nous employez directement. L'URSSAF gère le prélèvement des cotisations sociales.</p>
+                        <div class="bg-gray-50 rounded-xl p-5 border border-gray-100 space-y-3">
+                            <div class="flex justify-between items-center pb-2 border-b border-gray-200"><span class="text-gray-600">Salaire Net versé</span><span class="font-medium">100,00 €</span></div>
+                            <div class="flex justify-between items-center pb-2 border-b border-gray-200"><span class="text-gray-600">Cotisations URSSAF</span><span class="font-medium text-gray-500">+ 74,00 € *</span></div>
+                            <div class="flex justify-between items-center pb-2 border-b border-gray-200 font-bold"><span class="text-gray-800">Coût global</span><span class="text-gray-800">174,00 €</span></div>
+                            <div class="flex justify-between items-center pb-2 border-b border-gray-200 text-jkGreen"><span>Avance immédiate (50%)</span><span class="font-bold">- 87,00 €</span></div>
+                            <div class="flex justify-between items-center pt-2"><span class="text-lg font-bold text-gray-900">Votre Reste à Charge</span><span class="text-2xl font-extrabold text-jkDarkGreen">87,00 €</span></div>
+                        </div>
+                        <p class="text-xs text-gray-400 mt-4 italic">* Ce montant est donné à titre d'exemple et ne reflète pas les charges réelles ou exercées.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl shadow-lg border-t-4 border-jkBlue fade-in relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-blue-50 text-jkDarkBlue px-4 py-1 rounded-bl-2xl font-bold text-sm">Jardin, Bricolage, Info</div>
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="file-check" class="w-6 h-6 text-jkDarkBlue"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Prestation facturée</h3>
+                        </div>
+                        <p class="text-gray-600 mb-6 min-h-[48px]">Nous intervenons en tant qu'auto-entrepreneur. Vous recevez une facture simple et claire.</p>
+                        <div class="bg-gray-50 rounded-xl p-5 border border-gray-100 space-y-3">
+                            <div class="flex justify-between items-center pb-2 border-b border-gray-200 font-bold"><span class="text-gray-800">Montant de la facture</span><span class="text-gray-800">100,00 €</span></div>
+                            <div class="flex justify-between items-center pb-2 border-b border-gray-200 opacity-0 select-none"><span class="text-gray-600">-</span><span class="font-medium">-</span></div>
+                            <div class="flex justify-between items-center pb-2 border-b border-gray-200 opacity-0 select-none font-bold"><span class="text-gray-800">-</span><span class="text-gray-800">-</span></div>
+                            <div class="flex justify-between items-center pb-2 border-b border-gray-200 text-jkBlue"><span>Avance immédiate (50%)</span><span class="font-bold">- 50,00 €</span></div>
+                            <div class="flex justify-between items-center pt-2"><span class="text-lg font-bold text-gray-900">Votre Reste à Charge</span><span class="text-2xl font-extrabold text-jkDarkBlue">50,00 €</span></div>
+                        </div>
+                        <p class="text-xs text-gray-400 mt-4 italic">Les charges sociales sont incluses dans notre tarif horaire auto-entrepreneur.</p>
+                    </div>
+                </div>
+                <div class="mt-12 text-center fade-in max-w-3xl mx-auto bg-green-100 p-6 rounded-2xl border border-green-200 text-jkDarkGreen">
+                    <i data-lucide="lightbulb" class="w-8 h-8 mx-auto mb-3"></i>
+                    <p class="font-medium">Grâce à <strong>l'Avance Immédiate</strong>, vous n'avancez plus les fonds. Vous ne payez que votre reste à charge réel chaque mois !</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Quels services sont éligibles au crédit d'impôt ?</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">La loi définit précisément les activités de services à la personne ouvrant droit à l'avantage fiscal.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 flex items-start fade-in">
+                        <i data-lucide="home" class="w-6 h-6 text-jkGreen mr-4 flex-shrink-0 mt-1"></i>
+                        <div><h4 class="font-bold text-gray-900 mb-1">Aide au domicile</h4><p class="text-sm text-gray-600">Entretien du cadre de vie, ménage et repassage quotidien.</p></div>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 flex items-start fade-in">
+                        <i data-lucide="shirt" class="w-6 h-6 text-jkGreen mr-4 flex-shrink-0 mt-1"></i>
+                        <div><h4 class="font-bold text-gray-900 mb-1">Linge & Repassage</h4><p class="text-sm text-gray-600">Collecte, repassage et livraison de votre linge à domicile.</p></div>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 flex items-start fade-in">
+                        <i data-lucide="sprout" class="w-6 h-6 text-jkGreen mr-4 flex-shrink-0 mt-1"></i>
+                        <div><h4 class="font-bold text-gray-900 mb-1">Petit Jardinage</h4><p class="text-sm text-gray-600">Tonte, taille de haies, désherbage et entretien extérieur.</p></div>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 flex items-start fade-in">
+                        <i data-lucide="wrench" class="w-6 h-6 text-jkGreen mr-4 flex-shrink-0 mt-1"></i>
+                        <div><h4 class="font-bold text-gray-900 mb-1">Petit Bricolage</h4><p class="text-sm text-gray-600">Montage de meubles et réparations courantes "homme toutes mains".</p></div>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 flex items-start fade-in">
+                        <i data-lucide="utensils" class="w-6 h-6 text-jkGreen mr-4 flex-shrink-0 mt-1"></i>
+                        <div><h4 class="font-bold text-gray-900 mb-1">Préparation de Repas</h4><p class="text-sm text-gray-600">Aide à la confection des repas directement dans votre cuisine.</p></div>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 flex items-start fade-in">
+                        <i data-lucide="shopping-bag" class="w-6 h-6 text-jkGreen mr-4 flex-shrink-0 mt-1"></i>
+                        <div><h4 class="font-bold text-gray-900 mb-1">Courses & Livraison</h4><p class="text-sm text-gray-600">Livraison de courses, de repas ou de linge à domicile.</p></div>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 flex items-start fade-in">
+                        <i data-lucide="coffee" class="w-6 h-6 text-jkGreen mr-4 flex-shrink-0 mt-1"></i>
+                        <div><h4 class="font-bold text-gray-900 mb-1">Compagnie & Écoute</h4><p class="text-sm text-gray-600">Présence humaine, lecture, jeux et rompre l'isolement.</p></div>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 flex items-start fade-in">
+                        <i data-lucide="users" class="w-6 h-6 text-jkGreen mr-4 flex-shrink-0 mt-1"></i>
+                        <div><h4 class="font-bold text-gray-900 mb-1">Aide au quotidien</h4><p class="text-sm text-gray-600">Accompagnement dans les actes de la vie courante (hors soins médicaux).</p></div>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 flex items-start fade-in">
+                        <i data-lucide="dog" class="w-6 h-6 text-jkGreen mr-4 flex-shrink-0 mt-1"></i>
+                        <div><h4 class="font-bold text-gray-900 mb-1">Entretien & Garde d'animaux</h4><p class="text-sm text-gray-600">Compagnie, nourriture et sorties (hors soins vétérinaires).</p></div>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 flex items-start fade-in">
+                        <i data-lucide="file-text" class="w-6 h-6 text-jkGreen mr-4 flex-shrink-0 mt-1"></i>
+                        <div><h4 class="font-bold text-gray-900 mb-1">Assistance Administrative</h4><p class="text-sm text-gray-600">Aide aux démarches en ligne, tri et gestion des documents.</p></div>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 flex items-start fade-in">
+                        <i data-lucide="monitor" class="w-6 h-6 text-jkGreen mr-4 flex-shrink-0 mt-1"></i>
+                        <div><h4 class="font-bold text-gray-900 mb-1">Assistance Informatique</h4><p class="text-sm text-gray-600">Aide à l'utilisation des outils numériques, tablette et internet.</p></div>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 flex items-start fade-in">
+                        <i data-lucide="shield-check" class="w-6 h-6 text-jkGreen mr-4 flex-shrink-0 mt-1"></i>
+                        <div><h4 class="font-bold text-gray-900 mb-1">Maintenance & Vigilance</h4><p class="text-sm text-gray-600">Surveillance de résidence (arrosage, courrier) lors de vos absences.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-green-50 border-t border-green-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">L'administratif vous fait peur ?</h2>
+                    <p class="text-xl text-jkDarkGreen font-medium">Nous sommes là pour vous guider de A à Z.</p>
+                </div>
+                <div class="relative">
+                    <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-green-200 -translate-y-1/2 z-0"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
+                        <div class="bg-white rounded-2xl p-6 text-center shadow-md border border-green-100 fade-in">
+                            <div class="w-12 h-12 bg-jkDarkGreen text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 ring-4 ring-white">1</div>
+                            <h4 class="font-bold text-gray-900 mb-2">Premier contact</h4>
+                            <p class="text-sm text-gray-600">Nous définissons ensemble vos besoins et le cadre légal de l'intervention.</p>
+                        </div>
+                        <div class="bg-white rounded-2xl p-6 text-center shadow-md border border-green-100 fade-in">
+                            <div class="w-12 h-12 bg-jkDarkGreen text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 ring-4 ring-white">2</div>
+                            <h4 class="font-bold text-gray-900 mb-2">Création du compte</h4>
+                            <p class="text-sm text-gray-600">Nous vous aidons à créer votre espace sur CESU+ / URSSAF.</p>
+                        </div>
+                        <div class="bg-white rounded-2xl p-6 text-center shadow-md border border-green-100 fade-in">
+                            <div class="w-12 h-12 bg-jkDarkGreen text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 ring-4 ring-white">3</div>
+                            <h4 class="font-bold text-gray-900 mb-2">Intervention</h4>
+                            <p class="text-sm text-gray-600">Nous réalisons la prestation à votre domicile avec le sourire !</p>
+                        </div>
+                        <div class="bg-white rounded-2xl p-6 text-center shadow-md border border-green-100 fade-in">
+                            <div class="w-12 h-12 bg-jkGreen text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 ring-4 ring-white">4</div>
+                            <h4 class="font-bold text-gray-900 mb-2">Validation</h4>
+                            <p class="text-sm text-gray-600">L'URSSAF prélève votre reste à charge réel sans avance de frais.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-16 text-center fade-in">
+                    <a href="contact.html" class="inline-block bg-gradient-to-r from-jkDarkGreen to-jkDarkBlue text-white font-bold text-lg py-4 px-10 rounded-full hover:shadow-xl hover:opacity-90 transition transform hover:-translate-y-1">
+                        Discutons de vos besoins
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="flex items-center mb-4 md:mb-0">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-jkGreen to-jkBlue font-bold text-xl mr-2">JK-Alliance</span>
+                <span class="text-sm">© 2026 Tous droits réservés.</span>
+            </div>
+            <div class="flex space-x-6 text-sm flex-wrap justify-center md:justify-end gap-y-2">
+                <a href="cgv.html" class="hover:text-white transition">CGV</a>
+                <a href="mentions-legales.html" class="hover:text-white transition">Mentions légales</a>
+                <a href="politique-de-confidentialite.html" class="hover:text-white transition">Politique de confidentialité</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        
+        btn.addEventListener('click', () => {
+            const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', !isExpanded);
+            menu.classList.toggle('hidden');
+        });
+
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                btn.setAttribute('aria-expanded', 'false');
+                menu.classList.add('hidden');
+            });
+        });
+
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) { 
+                navbar.classList.add('shadow-md'); 
+                navbar.classList.replace('bg-transparent', 'glass-effect'); 
+            }
+            else { 
+                navbar.classList.remove('shadow-md'); 
+            }
+        });
+
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+        }, { threshold: 0.1 });
+        fadeElements.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

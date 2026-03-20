@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services aux Professionnels & Auto-entrepreneurs | JK-Alliance</title>
+    
+    <meta name="description" content="JK-Alliance accompagne les professionnels et auto-entrepreneurs : création de site internet vitrine, assistance administrative, gestion et outils numériques.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.jk-alliance.com/professionnel.html">
+
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="JK-Alliance" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+    <meta property="og:title" content="Services aux Professionnels & Auto-entrepreneurs | JK-Alliance">
+    <meta property="og:description" content="Accompagnement sur-mesure pour votre entreprise : création de site web, gestion administrative et paramétrage d'outils numériques.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.jk-alliance.com/professionnel.html">
+    <meta property="og:image" content="assets/jk.webp">
+    <meta property="og:locale" content="fr_FR">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        jkGreen: '#4ade80',
+                        jkDarkGreen: '#166534',
+                        jkBlue: '#3b82f6',
+                        jkDarkBlue: '#1e3a8a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        .glass-effect { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-gray-50">
+
+    <nav class="fixed w-full z-50 glass-effect border-b border-gray-200 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" aria-label="Retour à l'accueil">
+                        <img src="assets/jk.webp" alt="Logo JK-Alliance" width="200" height="64" fetchpriority="high" class="h-16 w-auto object-contain transition-all duration-300" onerror="this.src='https://placehold.co/200x80/ffffff/166534?text=JK-Alliance'">
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
+                    <a href="index.html#accueil" class="text-gray-600 hover:text-jkDarkGreen font-medium transition">Accueil</a>
+                    <a href="index.html#services-particuliers" class="text-gray-600 hover:text-jkDarkGreen font-medium transition">Particuliers</a>
+                    <a href="#" class="text-jkDarkBlue font-bold border-b-2 border-jkDarkBlue pb-1 transition">Professionnels</a>
+                    
+                    <div class="relative group">
+                        <button aria-haspopup="true" aria-expanded="false" class="bg-jkDarkGreen text-white px-5 py-2 rounded-full hover:bg-opacity-90 transition shadow-md flex items-center font-medium">
+                            En savoir plus <i data-lucide="chevron-down" class="w-4 h-4 ml-1 group-hover:rotate-180 transition-transform duration-300"></i>
+                        </button>
+                        <div class="absolute left-1/2 -translate-x-1/2 mt-0 pt-4 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                            <div class="bg-white border border-gray-100 rounded-xl shadow-xl flex flex-col overflow-hidden">
+                                <a href="cesu.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-jkDarkGreen transition border-b border-gray-50 flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i data-lucide="piggy-bank" class="w-4 h-4 text-jkDarkGreen"></i>
+                                    </div>
+                                    Le fonctionnement CESU
+                                </a>
+                                <a href="portfoliocesu.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-jkDarkGreen transition border-b border-gray-50 flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i data-lucide="sparkles" class="w-4 h-4 text-jkDarkGreen"></i>
+                                    </div>
+                                    Nos Interventions
+                                </a>
+                                <a href="#" class="px-4 py-3 text-sm font-bold text-jkDarkBlue bg-blue-50 transition border-b border-gray-50 flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-blue-200 flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i data-lucide="rocket" class="w-4 h-4 text-jkDarkBlue"></i>
+                                    </div>
+                                    Accompagnement Pro
+                                </a>
+                                <a href="portfolioweb.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-jkDarkBlue transition border-b border-gray-50 flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i data-lucide="monitor-smartphone" class="w-4 h-4 text-jkDarkBlue"></i>
+                                    </div>
+                                    Nos Réalisations Web
+                                </a>
+                                <a href="qui-sommes-nous.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i data-lucide="users" class="w-4 h-4 text-gray-700"></i>
+                                    </div>
+                                    Qui sommes-nous ?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="bg-jkDarkBlue text-white px-5 py-2 rounded-full hover:bg-opacity-90 transition shadow-md">Nous contacter</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" aria-label="Menu principal" aria-expanded="false" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t overflow-y-auto max-h-[calc(100vh-80px)]">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html#accueil" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Accueil</a>
+                <a href="index.html#services-particuliers" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Particuliers</a>
+                <a href="index.html#services-pros" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Professionnels</a>
+                
+                <div class="border-t border-gray-100 my-2 pt-2 pb-1">
+                    <p class="px-3 py-1 text-xs font-bold text-gray-400 uppercase tracking-wider">En savoir plus</p>
+                    <a href="cesu.html" class="flex items-center px-3 py-2 text-gray-700 hover:bg-green-50 hover:text-jkDarkGreen rounded-md transition">
+                        <i data-lucide="piggy-bank" class="w-4 h-4 mr-3 text-jkDarkGreen"></i> Le fonctionnement CESU
+                    </a>
+                    <a href="portfoliocesu.html" class="flex items-center px-3 py-2 text-gray-700 hover:bg-green-50 hover:text-jkDarkGreen rounded-md transition">
+                        <i data-lucide="sparkles" class="w-4 h-4 mr-3 text-jkDarkGreen"></i> Nos Interventions
+                    </a>
+                    <a href="#" class="flex items-center px-3 py-2 font-bold text-jkDarkBlue bg-blue-50 rounded-md transition">
+                        <i data-lucide="rocket" class="w-4 h-4 mr-3 text-jkDarkBlue"></i> Accompagnement Pro
+                    </a>
+                    <a href="portfolioweb.html" class="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-jkDarkBlue rounded-md transition">
+                        <i data-lucide="monitor-smartphone" class="w-4 h-4 mr-3 text-jkDarkBlue"></i> Nos Réalisations Web
+                    </a>
+                    <a href="qui-sommes-nous.html" class="flex items-center px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md transition">
+                        <i data-lucide="users" class="w-4 h-4 mr-3 text-gray-700"></i> Qui sommes-nous ?
+                    </a>
+                </div>
+
+                <a href="contact.html" class="block px-3 py-2 text-jkDarkBlue font-bold hover:bg-gray-50 rounded-md mt-2">Nous contacter</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-20 lg:pt-40 lg:pb-24 bg-jkDarkBlue text-white overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="max-w-4xl mx-auto fade-in">
+                <div class="inline-flex items-center bg-white/10 px-4 py-2 rounded-full font-medium text-sm mb-6 backdrop-blur-sm border border-white/20">
+                    <i data-lucide="rocket" class="w-4 h-4 mr-2"></i> Accompagnement Auto-Entrepreneurs
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                    Concentrez-vous sur <span class="text-jkBlue">votre métier</span>, on structure le reste.
+                </h1>
+                <p class="text-xl text-blue-100 mb-10 leading-relaxed max-w-2xl mx-auto">
+                    De la création de votre site vitrine à votre organisation administrative, <span class="text-transparent bg-clip-text bg-gradient-to-r from-jkGreen to-jkBlue font-bold">JK-Alliance</span> devient le partenaire technique et administratif de votre réussite.
+                </p>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+            <svg class="relative block w-full h-[50px] md:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,130.9,127.3,196.4,115.87,239.5,108.36,280.45,82.8,321.39,56.44Z" class="fill-gray-50"></path>
+            </svg>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 fade-in max-w-4xl mx-auto">
+                    <i data-lucide="compass" class="w-12 h-12 text-jkBlue mx-auto mb-6"></i>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Un regard humain sur votre entreprise</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Lancer et faire vivre une auto-entreprise demande énormément d'énergie. Forts de notre expérience dans le conseil et l'accompagnement humain, nous savons à quel point la charge mentale peut être lourde. Notre objectif n'est pas de vous vendre des solutions complexes, mais de vous apporter de <strong>la sérénité</strong>, et de vous permetre de <strong>déléguer en toute confiance</strong> certaine démarches, même les plus complexes.  Nous écoutons vos besoins réels pour mettre en place des outils simples, efficaces, et qui vous font gagner du temps au quotidien.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24 fade-in">
+                    <div class="order-2 lg:order-1">
+                        <div class="inline-flex items-center text-jkBlue font-bold mb-3">
+                            <i data-lucide="globe" class="w-5 h-5 mr-2"></i> Visibilité Web
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">Création de Site Internet Vitrine & SEO</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Avoir une vitrine en ligne est aujourd'hui indispensable. Nous créons des sites épurés, rapides et parfaitement adaptés aux téléphones portables (comme celui sur lequel vous naviguez !). 
+                        </p>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Pour que vos futurs clients vous trouvent facilement, nous incluons également la mise en place d'un référencement local basique (SEO) : création de votre fiche établissement Google Maps et indexation de vos pages sur les moteurs de recherche.
+                        </p>
+                        <div class="bg-blue-50 border-l-4 border-jkBlue p-5 mt-6 rounded-r-lg">
+                            <div class="flex items-start text-sm text-gray-700">
+                                <i data-lucide="sparkles" class="w-6 h-6 text-jkBlue mr-3 flex-shrink-0 mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">L'alliance de l'humain et de la technologie</h4>
+                                    <p class="leading-relaxed">
+                                        En toute transparence, pour vous offrir un site performant à un tarif abordable, nous utilisons l'Intelligence Artificielle comme assistant de codage. <strong>L'IA optimise la structure technique, mais c'est notre œil humain qui dirige le projet, personnalise le design et rédige vos textes avec l'âme de votre entreprise.</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="portfolioweb.html" class="order-1 lg:order-2 group relative rounded-3xl overflow-hidden shadow-lg border border-gray-200 block aspect-video lg:aspect-auto lg:h-[450px]">
+                        <img src="assets/pro1.webp" alt="Création de site internet" width="800" height="450" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-jkDarkBlue bg-opacity-20 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+                            <div class="opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 text-center">
+                                <span class="inline-flex items-center px-6 py-3 bg-white text-jkDarkBlue font-bold rounded-full shadow-xl">
+                                    Découvrir ce projet <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                                </span>
+                                <p class="text-white font-medium mt-3 drop-shadow-md">Étude de cas : Maison Rocher</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24 fade-in">
+                    <div class="rounded-3xl aspect-video lg:aspect-auto lg:h-[450px] relative overflow-hidden shadow-lg border border-gray-200">
+                        <img src="assets/pro2.webp" alt="Gestion administrative et organisation" width="800" height="450" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    <div>
+                        <div class="inline-flex items-center text-jkDarkGreen font-bold mb-3">
+                            <i data-lucide="folder-open" class="w-5 h-5 mr-2"></i> Organisation
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">Assistance Administrative & Gestion</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            L'administratif ne devrait pas empiéter sur votre cœur de métier. Nous vous accompagnons pour structurer votre activité :
+                        </p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start text-gray-600">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-jkGreen mr-3 flex-shrink-0 mt-0.5"></i>
+                                Aide à la création et au suivi de vos devis et factures.
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-jkGreen mr-3 flex-shrink-0 mt-0.5"></i>
+                                Organisation de vos documents et notes de frais.
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-jkGreen mr-3 flex-shrink-0 mt-0.5"></i>
+                                Accompagnement pour vos déclarations URSSAF.
+                            </li>
+                        </ul>
+                        <p class="text-gray-600 italic text-sm border-t border-gray-100 pt-4">
+                            *Nous agissons en tant qu'assistant de gestion pour structurer votre terrain administratif et vous faire gagner un temps précieux.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24 fade-in">
+                    <div class="order-2 lg:order-1">
+                        <div class="inline-flex items-center text-jkBlue font-bold mb-3">
+                            <i data-lucide="cpu" class="w-5 h-5 mr-2"></i> Numérique
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">Installation & Paramétrage Logiciels</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Chaque métier a besoin de ses propres outils. Trouver le bon logiciel peut vite devenir un casse-tête. Chez <span class="text-transparent bg-clip-text bg-gradient-to-r from-jkDarkGreen to-jkDarkBlue font-bold">JK-Alliance</span>, nous nous chargeons de :
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start text-gray-600">
+                                <div class="w-6 h-6 rounded-full bg-blue-100 text-jkBlue flex items-center justify-center mr-3 mt-0.5 flex-shrink-0 text-sm font-bold">1</div>
+                                Chercher la solution adaptée à votre budget et vos besoins (agenda, facturation, outils de gestion...).
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <div class="w-6 h-6 rounded-full bg-blue-100 text-jkBlue flex items-center justify-center mr-3 mt-0.5 flex-shrink-0 text-sm font-bold">2</div>
+                                Installer et paramétrer entièrement le logiciel pour vous.
+                            </li>
+                            <li class="flex items-start text-gray-600">
+                                <div class="w-6 h-6 rounded-full bg-blue-100 text-jkBlue flex items-center justify-center mr-3 mt-0.5 flex-shrink-0 text-sm font-bold">3</div>
+                                Vous former à son utilisation de base pour que vous soyez autonome.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order-1 lg:order-2 rounded-3xl aspect-video lg:aspect-auto lg:h-[450px] relative overflow-hidden shadow-lg border border-gray-200">
+                        <img src="assets/pro3.webp" alt="Outils numériques et logiciels" width="800" height="450" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                </div>
+
+                <div class="bg-jkDarkBlue rounded-3xl p-10 md:p-16 text-white text-center fade-in overflow-hidden relative shadow-2xl">
+                    <div class="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-white opacity-5 rounded-full blur-3xl"></div>
+                    <div class="absolute bottom-0 left-0 -mb-10 -ml-10 w-40 h-40 bg-jkGreen opacity-10 rounded-full blur-3xl"></div>
+                    <i data-lucide="headset" class="w-16 h-16 mx-auto mb-6 text-blue-300 relative z-10"></i>
+                    <h3 class="text-3xl font-bold mb-4 relative z-10">Maintenance & Suivi continu</h3>
+                    <p class="text-blue-100 text-lg max-w-3xl mx-auto leading-relaxed relative z-10 mb-8">
+                        L'informatique et la gestion évoluent. Nous restons à vos côtés pour assurer les mises à jour, résoudre les petits bugs, ou simplement répondre à vos questions.
+                    </p>
+                    <a href="contact.html" class="inline-flex items-center px-8 py-4 bg-white text-jkDarkBlue rounded-full font-bold hover:bg-gray-100 transition shadow-lg relative z-10">
+                        Parlons de votre projet <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="flex items-center mb-4 md:mb-0">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-jkGreen to-jkBlue font-bold text-xl mr-2">JK-Alliance</span>
+                <span class="text-sm">© 2026 Tous droits réservés.</span>
+            </div>
+            <div class="flex space-x-6 text-sm flex-wrap justify-center md:justify-end gap-y-2">
+                <a href="cgv.html" class="hover:text-white transition">CGV</a>
+                <a href="mentions-legales.html" class="hover:text-white transition">Mentions légales</a>
+                <a href="politique-de-confidentialite.html" class="hover:text-white transition">Politique de confidentialité</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', !isExpanded);
+            menu.classList.toggle('hidden');
+        });
+
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                btn.setAttribute('aria-expanded', 'false');
+                menu.classList.add('hidden');
+            });
+        });
+
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('shadow-md');
+                navbar.classList.replace('bg-transparent', 'glass-effect');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeElements.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
