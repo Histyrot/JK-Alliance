@@ -21,6 +21,18 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+      <loc>https://www.jk-alliance.com/qui-sommes-nous.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+    <url>
+      <loc>https://www.jk-alliance.com/contact.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- Pages secondaires (Portfolios) -->
   <url>
@@ -31,6 +43,28 @@
   </url>
   <url>
     <loc>https://www.jk-alliance.com/portfolioweb.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>
+
+  <!-- Pages réglementations -->
+  <url>
+    <loc>https://www.jk-alliance.com/cgv.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.jk-alliance.com/politique-de-confidentialite.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>
+  <url>
+    <loc>https://www.jk-alliance.com/mentions-legales.html</loc>
     <lastmod>2026-03-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
