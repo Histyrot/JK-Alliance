@@ -3,7 +3,7 @@
   <!-- Page d'accueil -->
   <url>
     <loc>https://www.jk-alliance.com/</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,25 +11,25 @@
   <!-- Pages de services principales -->
   <url>
     <loc>https://www.jk-alliance.com/cesu.html</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.jk-alliance.com/professionnel.html</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
       <loc>https://www.jk-alliance.com/qui-sommes-nous.html</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
     <url>
       <loc>https://www.jk-alliance.com/contact.html</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -37,35 +37,34 @@
   <!-- Pages secondaires (Portfolios) -->
   <url>
     <loc>https://www.jk-alliance.com/portfoliocesu.html</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.jk-alliance.com/portfolioweb.html</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-</urlset>
+
 
   <!-- Pages réglementations -->
   <url>
     <loc>https://www.jk-alliance.com/cgv.html</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.jk-alliance.com/politique-de-confidentialite.html</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-</urlset>
   <url>
     <loc>https://www.jk-alliance.com/mentions-legales.html</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
