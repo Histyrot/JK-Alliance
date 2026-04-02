@@ -20,32 +20,72 @@
     <meta property="og:description" content="Un duo à votre service : aide à la personne, entretien, création de sites internet et assistance administrative.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.jk-alliance.com/">
-    <meta property="og:image" content="https://www.jk-alliance.com/assets/jk.webp">
+    <meta property="og:image" content="https://www.jk-alliance.com/assets/jk-sanstexte.webp">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:image:alt" content="JK-Alliance — aide à domicile, CESU et accompagnement des auto-entrepreneurs">
     <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="JK-Alliance">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JK-Alliance | Services aux Particuliers &amp; Pros">
+    <meta name="twitter:description" content="Un duo à votre service : aide à la personne, entretien, création de sites internet et assistance administrative.">
+    <meta name="twitter:image" content="https://www.jk-alliance.com/assets/jk-sanstexte.webp">
+    <meta name="twitter:image:alt" content="JK-Alliance — services aux particuliers et professionnels">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://www.jk-alliance.com/#localbusiness",
+          "name": "JK-Alliance",
+          "description": "Accompagnement des particuliers (aide à domicile, CESU, crédit d'impôt) et des auto-entrepreneurs (création de site web, gestion administrative, outils numériques) près de Fresnay-l'Évêque et dans un rayon d'environ 30 km.",
+          "url": "https://www.jk-alliance.com/",
+          "image": "https://www.jk-alliance.com/assets/jk.webp",
+          "logo": "https://www.jk-alliance.com/assets/jk.webp",
+          "telephone": "+33631521939",
+          "email": "contact@jk-alliance.com",
+          "priceRange": "€€",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Fresnay-l'Évêque",
+            "postalCode": "28310",
+            "addressCountry": "FR"
+          },
+          "areaServed": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+              "@type": "GeoCoordinates",
+              "latitude": 48.276,
+              "longitude": 1.441
+            },
+            "geoRadius": 30000
+          },
+          "identifier": {
+            "@type": "PropertyValue",
+            "name": "SIRET",
+            "value": "10259015500010"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.jk-alliance.com/#website",
+          "url": "https://www.jk-alliance.com/",
+          "name": "JK-Alliance",
+          "inLanguage": "fr-FR",
+          "publisher": { "@id": "https://www.jk-alliance.com/#localbusiness" }
+        }
+      ]
+    }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        jkGreen: '#4ade80',
-                        jkDarkGreen: '#166534',
-                        jkBlue: '#3b82f6',
-                        jkDarkBlue: '#1e3a8a',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
         .fade-in.visible { opacity: 1; transform: translateY(0); }
@@ -365,6 +405,7 @@
         </div>
     </footer>
 
+    <script src="assets/js/lucide-icons.js"></script>
     <script>
         lucide.createIcons();
 

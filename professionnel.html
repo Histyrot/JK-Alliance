@@ -20,32 +20,24 @@
     <meta property="og:description" content="Accompagnement sur-mesure pour votre entreprise : création de site web, gestion administrative et paramétrage d'outils numériques.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.jk-alliance.com/professionnel.html">
-    <meta property="og:image" content="https://www.jk-alliance.com/assets/jk.webp">
+    <meta property="og:image" content="https://www.jk-alliance.com/assets/pro1.webp">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="450">
+    <meta property="og:image:alt" content="Création de site internet et accompagnement pro — JK-Alliance">
     <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="JK-Alliance">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Services aux Professionnels &amp; Auto-entrepreneurs | JK-Alliance">
+    <meta name="twitter:description" content="Accompagnement sur-mesure pour votre entreprise : création de site web, gestion administrative et paramétrage d'outils numériques.">
+    <meta name="twitter:image" content="https://www.jk-alliance.com/assets/pro1.webp">
+    <meta name="twitter:image:alt" content="Accompagnement web et administratif pour les pros">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        jkGreen: '#4ade80',
-                        jkDarkGreen: '#166534',
-                        jkBlue: '#3b82f6',
-                        jkDarkBlue: '#1e3a8a',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
         .fade-in.visible { opacity: 1; transform: translateY(0); }
@@ -208,7 +200,7 @@
                         </div>
                     </div>
                     <a href="portfolioweb.html" class="order-1 lg:order-2 group relative rounded-3xl overflow-hidden shadow-lg border border-gray-200 block aspect-video lg:aspect-auto lg:h-[450px]">
-                        <img src="assets/pro1.webp" alt="Création de site internet" width="800" height="450" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <img src="assets/pro1.webp" alt="Création de site internet" width="800" height="450" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                         <div class="absolute inset-0 bg-jkDarkBlue bg-opacity-20 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
                             <div class="opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 text-center">
                                 <span class="inline-flex items-center px-6 py-3 bg-white text-jkDarkBlue font-bold rounded-full shadow-xl">
@@ -222,7 +214,7 @@
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24 fade-in">
                     <div class="rounded-3xl aspect-video lg:aspect-auto lg:h-[450px] relative overflow-hidden shadow-lg border border-gray-200">
-                        <img src="assets/pro2.webp" alt="Gestion administrative et organisation" width="800" height="450" class="w-full h-full object-cover">
+                        <img src="assets/pro2.webp" alt="Gestion administrative et organisation" width="800" height="450" loading="lazy" decoding="async" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     </div>
                     <div>
@@ -278,7 +270,7 @@
                         </ul>
                     </div>
                     <div class="order-1 lg:order-2 rounded-3xl aspect-video lg:aspect-auto lg:h-[450px] relative overflow-hidden shadow-lg border border-gray-200">
-                        <img src="assets/pro3.webp" alt="Outils numériques et logiciels" width="800" height="450" class="w-full h-full object-cover">
+                        <img src="assets/pro3.webp" alt="Outils numériques et logiciels" width="800" height="450" loading="lazy" decoding="async" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     </div>
                 </div>
@@ -313,6 +305,7 @@
         </div>
     </footer>
 
+    <script src="assets/js/lucide-icons.js"></script>
     <script>
         lucide.createIcons();
 
